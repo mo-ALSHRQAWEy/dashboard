@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALSHARQAWEy</title>
+    <link rel="stylesheet" href="css-fille/frame-work.css" />
+    <link rel="stylesheet" href="css-fille/all.css" />
+    <link rel="stylesheet" href="css-fille/all.min.css" />
+    <link rel="stylesheet" href="css-fille/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css-fille/main-fill-in.css" />
+</head>
+
+<body>
+
+    <!-- Modal Overlay -->
+    <div class="overlay" id="modalOverlay" style="height: 100%;">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">✖</button>
+            <h2>Welcome on <br> <span>Mo Web</span></h2>
+        </div>
+    </div>
+
+    <!-- Sidebar + Content Wrapper -->
+    <!-- Sidebar -->
+    <div class="pag d-flex">
+        <div class="sidebar bg-white -p-10 m-10  ">
+            <h1 class="p-15 m-10" style="text-align: center;">mo <br> sobhy</h1>
+            <div class="lier .wid">
+                <ul class="d-flex f-wrap p-10 m-10 align-center f-column gap-20">
+                    <li class="change" id="changeClassBtn">
+                        <a href="index.html" class="active d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="settings d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-solid fa-gear fa-fw set"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="content w-full ">
+            <!-- Header -->
+            <header class="t-0 p-relative p-15 m bg-white">
+                <div class="head d-flex align-center space-between">
+                    <div class="form p-relative">
+                        <input type="text" placeholder="you can search here" />
+                    </div>
+                    <div class="icone d-flex align-center gap-20">
+                        <i class="fa-regular fa-bell fa-lg p-relative" style="position: relative; cursor: pointer;">
+                            <span class="mes"></span>
+                        </i>
+                        <div class="img">
+                            <img src="css-fille/image/avatar.png" alt="" class="header-img" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- staert friends -->
+            <div class="friends w-full p-20">
+                <div class="title friends-title m-10">
+                    <h1>friends</h1>
+                </div>
+                <div class="holder m-20   p-20 d-flex p-relative">
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                data-aos-delay="100">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" data-aos-delay="100">
+                        <div class="contact" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="200" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                            data-aos-delay="100">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Omar Fathy</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>30 Friends</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>11 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>12 Articles</span>
+                            </div>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/08/2020</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-02.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-03.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-04.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-05.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+                            <span class="vip fw-bold c-orange">VIP</span>
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend bg-white rad-6 p-20 p-relative" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
+                        <div class="contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="txt-c">
+                            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100"
+                                src="css-fille/image/friend-01.jpg" alt="" />
+                            <h4 class="m-0">Ahmed Nasser</h4>
+                            <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+                        </div>
+                        <div class="icons fs-14 p-relative ">
+                            <div class="mb-10">
+                                <i class="fa-regular fa-face-smile fa-fw"></i>
+                                <span>99 Friend</span>
+                            </div>
+                            <div class="mb-10">
+                                <i class="fa-solid fa-code-commit fa-fw"></i>
+                                <span>15 Projects</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-newspaper fa-fw"></i>
+                                <span>25 Articles</span>
+                            </div>
+
+                        </div>
+                        <div class="info between-flex fs-13">
+                            <span class="c-grey">Joined 02/10/2021</span>
+                            <div>
+                                <a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+                                <a class="bg-red c-white btn-shape" href="#">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end friends -->
+    </div>
+
+    <script src="jss-fill.js"></script>
+    <script src="jss-fill.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 100,
+            once: false
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALSHARQAWEy</title>
+    <link rel="stylesheet" href="css-fille/frame-work.css" />
+    <link rel="stylesheet" href="css-fille/all.css" />
+    <link rel="stylesheet" href="css-fille/all.min.css" />
+    <link rel="stylesheet" href="css-fille/normalize.css" />
+    <link rel="stylesheet" href="css-fille/main-fill-in.css" />
+</head>
+
+<body>
+    <!-- Modal Overlay -->
+    <div class="overlay" id="modalOverlay" style="height: 100%;">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">✖</button>
+            <h2>Welcome on <br> <span>Mo Web</span></h2>
+        </div>
+    </div>
+
+    <!-- Sidebar + Content Wrapper -->
+    <!-- Sidebar -->
+    <div class="pag d-flex">
+         <div class="sidebar bg-white -p-10 m-10  ">
+            <h1 class="p-15 m-10" style="text-align: center;">mo <br> sobhy</h1>
+            <div class="lier .wid">
+                <ul class="d-flex f-wrap p-10 m-10 align-center f-column gap-20">
+                    <li class="change" id="changeClassBtn">
+                        <a href="index.html" class="active d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="settings d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-solid fa-gear fa-fw set"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="content w-full ">
+            <!-- Header -->
+            <header class="t-0 p-relative p-15 m bg-white">
+                <div class="head d-flex align-center space-between">
+                    <div class="form p-relative">
+                        <input type="text" placeholder="you can search here" />
+                    </div>
+                    <div class="icone d-flex align-center gap-20">
+                        <i class="fa-regular fa-bell fa-lg p-relative" style="position: relative; cursor: pointer;">
+                            <span class="mes"></span>
+                        </i>
+                        <div class="img">
+                            <img src="css-fille/image/avatar.png" alt="" class="header-img" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- staert settings -->
+            <div class="settings w-full p-20">
+                <div class="title setting-title m-10">
+                    <h1>settings</h1>
+                </div>
+                <div class="holder m-20  d-flex p-relative">
+                    <div class="box-sitting w-full bg-white p-15 rad-10 p-20">
+                        <div class="titile mb-25 ">
+                            <h2>Site Control</h2>
+                            <p class="fs-13 c-grey">Control The Website If There Is Maintenance</p>
+                        </div>
+                        <div class="mt-20 ">
+                            <p class="c-eee fw-bold fs-14">Website Control</p>
+                            <span class=" c-black fs-13">Open/Close Website And Type The Reason</span>
+                        </div>
+                        <div class="labale w-full p-relative">
+                            <label>
+                                <input class="checkbox" type="checkbox" checked />
+                                <div class="switch"></div>
+                            </label>
+                        </div>
+                        <div class="text"> <textarea class="w-full h-full p-20"></textarea></div>
+                        <h5 class="c-grey p-20 fs-14">please write your resone</h5>
+                    </div>
+                    <div class="box-sitting box-sitting w-full bg-white p-20 rad-10 p-20">
+                        <h2>General Info</h2>
+                        <p class="c-grey">General Information About Your Account</p>
+                        <div class="inputs w-full p-20">
+                            <p class="c-grey fs-13">first name </p>
+                            <input type="text" placeholder="first name">
+                            <p class="c-grey fs-13">last name </p>
+                            <input type="text" placeholder="last name">
+                            <p class="c-grey fs-13">nter your email</p>
+                            <input type="email" placeholder="mo.come">
+                        </div>
+                    </div>
+                    <div class="box-sitting box-sitting w-full bg-white p-20 rad-10 p-20">
+                        <h2>Security Info</h2>
+                        <p class="c-grey"> ecurity Information About Your Account</p>
+                        <div class="border-ccc-botton p-10 d-flex space-between align-center">
+                            <div class="pass ">
+                                <p class="c-black fs-15">passowrd</p><span class="fs-13 c-grey">Last Change On
+                                    25/10/2021</span>
+                            </div><button class="link bg-blue rad-10 c-white">change</button>
+                        </div>
+                        <div class="border-ccc-botton p-10 d-flex space-between align-center">
+                            <div class="text-in-content">
+                                <p class="c-black fs-15">Two-Factor Authentication</p><span
+                                    class="fs-13 c-grey">LEnable/Disable The Feature</span>
+
+                            </div>
+                            <div class="labale w-full p-relative">
+                                <label>
+                                    <input class="checkbox" type="checkbox" checked />
+                                    <div class="switch"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class=" d-flex space-between align-center device p-20">
+                            <div class="text-in-content">
+                                <p class="c-black fs-15">Devices</p>
+                                <span lass="fs-13 c-grey">Check The Login Devices List</span>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=201091569931"
+                                class="link bg-eee rad-6   c-white">ask us</a>
+                        </div>
+                        <div class=" d-flex space-between align-center device">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="box-sitting h-full box-sitting w-full bg-white p-20 rad-10 p-20">
+                        <h2>Widgets Control</h2>
+                        <p class="c-grey">Show/Hide Widgets</p>
+                        <div class="inputs w-full p-20">
+                            <div class="d-flex f-column space-between h-full gap-5">
+                                <input type="checkbox"> <span class="c-orange fs-15 fw-bold m-10">Tickets
+                                    Statistics</span>
+                                <input type="checkbox"> <span class="c-orange fs-15 fw-bold m-10">Latest Tasks</span>
+                                <input type="checkbox"> <span class="c-orange fs-15 fw-bold m-10">Top Search
+                                    Items</span> <input type="checkbox"> <span
+                                    class="c-orange fs-15 fw-bold m-10">Latest Tasks</span>
+                                <input type="checkbox"> <span class="c-orange fs-15 fw-bold m-10">Top Search
+                                    Items</span> <input type="checkbox"> <span
+                                    class="c-orange fs-15 fw-bold m-10">Latest Tasks</span>
+                                <input type="checkbox"> <span class="c-orange fs-15 fw-bold m-10">Top Search
+                                    Items</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+            <!-- end settings -->
+        </div>
+
+        <script src="jss-fill.js"></script>
+</body>
+
+</html>

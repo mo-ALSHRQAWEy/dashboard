@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALSHARQAWEy</title>
+    <link rel="stylesheet" href="css-fille/frame-work.css" />
+    <link rel="stylesheet" href="css-fille/all.css" />
+    <link rel="stylesheet" href="css-fille/all.min.css" />
+    <link rel="stylesheet" href="css-fille/normalize.css" />
+    <link rel="stylesheet" href="css-fille/main-fill-in.css" />
+</head>
+
+<body>
+    <!-- Modal Overlay -->
+    <div class="overlay" id="modalOverlay" style="height: 100%;">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">✖</button>
+            <h2>Welcome on <br> <span>Mo Web</span></h2>
+        </div>
+    </div>
+
+    <!-- Sidebar + Content Wrapper -->
+    <!-- Sidebar -->
+    <div class="pag d-flex">
+        <div class="sidebar bg-white -p-10 m-10  ">
+            <h1 class="p-15 m-10" style="text-align: center;">mo <br> sobhy</h1>
+            <div class="lier .wid">
+                <ul class="d-flex f-wrap p-10 m-10 align-center f-column gap-20">
+                    <li class="change" id="changeClassBtn">
+                        <a href="index.html" class="active d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="Projects.html">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="content w-full ">
+            <!-- Header -->
+            <header class="t-0 p-relative p-15 m bg-white">
+                <div class="head d-flex align-center space-between">
+                    <div class="form p-relative">
+                        <input type="text" placeholder="you can search here" />
+                    </div>
+                    <div class="icone d-flex align-center gap-20">
+                        <i class="fa-regular fa-bell fa-lg p-relative" style="position: relative; cursor: pointer;">
+                            <span class="mes"></span>
+                        </i>
+                        <div class="img">
+                            <img src="css-fille/image/avatar.png" alt="" class="header-img" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- staert settings -->
+            <div class=" w-full p-20 profile">
+                <div class="settings w-full ">
+                    <div class="title profile ">
+                        <h1>profile</h1>
+                    </div>
+                    <div class="holder d-flex">
+                        <div class="box-profile w-full bg-white rad-10 p-15 d-flex">
+                            <div class="left d-flex f-column center-flex gap-5  ">
+                                <img src="css-fille/image/avatar.png" alt="">
+                                <h3 class="c-blue">mohamed sobhy </h3>
+                                <p class="c-grey fs-14">Level 20</p>
+                                <div class="sters"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+                                        class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                        style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                        style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                        style="color: #FFD43B;"></i>
+                                </div>
+                                <span class="fs-13 m-10 c-grey">550 Rating</span>
+                            </div>
+                            <div class="right w-full">
+                                <div class="box-p one w-full border-ccc-botton p-20">
+                                    <h4 class="c-grey"> some infromation</h4>
+                                    <div class="d-flex space-between w-full f-wrap p-15">
+                                        <p class="c-grey fs-14">full name: <span class="fs-15 c-orange">mohamed sobhy
+                                                mohamed</span></p>
+                                        <p class="c-grey fs-14"> Gender: <span class="fs-15 c-orange"> Male</span></p>
+                                        <p class="c-grey fs-14">country: <span class="fs-15 c-orange">egypt</span></p>
+
+                                    </div>
+                                    <label class="profile">
+                                        <input class="checkbox" type="checkbox" checked />
+                                        <div class="switch"></div>
+                                    </label>
+                                </div>
+                                <div class="box-p one w-full border-ccc-botton p-20">
+                                    <h4 class="c-grey"> Personal Information</h4>
+                                    <div class="d-flex space-between w-full f-wrap p-15">
+                                        <p class="c-grey fs-14">email: <span class="fs-15 c-orange">mo.come</span></p>
+                                        <p class="c-grey fs-14">phone number: <span class="fs-15 c- c-blue"><a
+                                                    href="https://api.whatsapp.com/send?phone=01091560031">01091569931</a></span>
+                                        </p>
+                                        <p class="c-grey fs-14">Date Of Birth: <span class="fs-15 c-orange">2010 / 9 /
+                                                8</span></p>
+
+                                    </div>
+                                    <label class="profile">
+                                        <input class="checkbox" type="checkbox" checked />
+                                        <div class="switch"></div>
+                                    </label>
+                                </div>
+                                <div class="box-p border-ccc-botton p-20">
+                                    <h4 class="c-grey"> some infromation</h4>
+                                    <div class="d-flex space-between w-full f-wrap p-15">
+                                        <p class="c-grey fs-14">full name: <span class="fs-15 c-orange">mohamed sobhy
+                                                mohamed</span></p>
+                                        <p class="c-grey fs-14"> Gender: <span class="fs-15 c-orange"> Male</span></p>
+                                        <p class="c-grey fs-14">country: <span class="fs-15 c-orange">egypt</span></p>
+                                    </div>
+                                    <label class="profile">
+                                        <input class="checkbox" type="checkbox" checked />
+                                        <div class="switch"></div>
+                                    </label>
+                                </div>
+                                <div class="box-p  p-20">
+                                    <h4 class="c-grey"> some infromation</h4>
+                                    <div class="d-flex space-between w-full f-wrap p-15">
+                                        <p class="c-grey fs-14">full name: <span class="fs-15 c-orange">mohamed sobhy
+                                                mohamed</span></p>
+                                        <p class="c-grey fs-14"> Gender: <span class="fs-15 c-orange"> Male</span></p>
+                                        <p class="c-grey fs-14">country: <span class="fs-15 c-orange">egypt</span></p>
+                                    </div> <label class="profile">
+                                        <input class="checkbox" type="checkbox" checked />
+                                        <div class="switch"></div>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-profile skills  bg-white rad-10 p-15 mt-20">
+                            <h2>my skills</h2>
+                            <p class="c-grey">Complete Skills List</p>
+                            <ul class="border-ccc-botton p-20 d-flex space-between f-wrap gap-20">
+                                <li class=" bg-eee p-10 c-white rad-10 fs-14"> html </li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">css</li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">js</li>
+                            </ul>
+                            <p class="c-grey">learning</p>
+                            <ul class="border-ccc-botton p-20 d-flex space-between f-wrap  gap-20 ">
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15"> Reactjs </li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">git & githup</li>
+                            </ul>
+                            <p class="c-grey">will learning after that</p>
+                            <ul class="border-ccc-botton p-20 d-flex space-between f-wrap  gap-20 ">
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15"> SASS</li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">Pugjs</li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">typescript </li>
+                            </ul>
+                            <p class="c-grey"> in our plan to full stack</p>
+                            <ul class="border-ccc-botton gap-20 p-20 f-wrap d-flex space-between">
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15"> php</li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">lravel</li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">python</li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">nod.js</li>
+                                <li class=" bg-eee p-10 c-white rad-10 fs-15">go </li>
+                            </ul>
+                        </div>
+                        <div class="box-profile activity p-20 bg-white rad-10 mt-20 w-full">
+                            <h2 class="mt-0 mb-10">Latest Activities</h2>
+                            <p class="mt-0 mb-20 c-grey fs-15">Latest Activities Done By The User</p>
+                            <div class="activity d-flex border-ccc-botton p-15 align-center txt-c-mobile ">
+                                <img decoding="async" src="css-fille/image/activity-01.png" alt="" />
+                                <div class="info">
+                                    <span class="d-block mb-10">Store</span>
+                                    <span class="c-grey">Bought The Mastering Python Course</span>
+                                </div>
+                                <div class="date">
+                                    <span class="d-block mb-10">18:10</span>
+                                    <span class="c-grey">Yesterday</span>
+                                </div>
+                            </div>
+                            <div
+                                class="activity d-flex align-center border-ccc-botton p-15 txt-c-mobile border-ccc-botton">
+                                <img decoding="async" src="css-fille/image/activity-02.png" alt="" />
+                                <div class="info">
+                                    <span class="d-block mb-10">Academy</span>
+                                    <span class="c-grey">Got The PHP Certificate</span>
+                                </div>
+                                <div class="date">
+                                    <span class="d-block mb-10">16:05</span>
+                                    <span class="c-grey">Yesterday</span>
+                                </div>
+                            </div>
+                            <div class="activity p-15 d-flex align-center txt-c-mobile border-ccc-botton">
+                                <img decoding="async" src="css-fille/image/activity-03.png" alt="" />
+                                <div class="info">
+                                    <span class="d-block mb-10">Badges</span>
+                                    <span class="c-grey">Unlocked The 10 Skills Badge</span>
+                                </div>
+                                <div class="date">
+                                    <span class="d-block mb-10">18:05</span>
+                                    <span class="c-grey">Yesterday</span>
+                                </div>
+                            </div>
+                            <div class="activity d-flex p-15 align-center txt-c-mobile">
+                                <img decoding="async" src="css-fille/image/activity-01.png" alt="" />
+                                <div class="info">
+                                    <span class="d-block mb-10">Store</span>
+                                    <span class="c-grey">Bought The Typescript Course</span>
+                                </div>
+                                <div class="date">
+                                    <span class="d-block mb-10">12:05</span>
+                                    <span class="c-grey">Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end settings -->
+            </div>
+            <script src="jss-fill.js"></script>
+</body>
+
+</html>

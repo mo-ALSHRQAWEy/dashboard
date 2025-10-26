@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALSHARQAWEy</title>
+  <link rel="stylesheet" href="css-fille/frame-work.css" />
+  <link rel="stylesheet" href="css-fille/all.css" />
+  <link rel="stylesheet" href="css-fille/all.min.css" />
+  <link rel="stylesheet" href="css-fille/normalize.css" />
+  <link rel="stylesheet" href="css-fille/main-fill-in.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Modal Overlay -->
+  <div class="overlay" id="modalOverlay" style="height: 100%;">
+    <div class="modal">
+      <button class="close-btn" onclick="closeModal()">✖</button>
+      <h2>Welcome on <br> <span>Mo Web</span></h2>
+    </div>
+  </div>
+
+  <!-- Sidebar + Content Wrapper -->
+  <!-- Sidebar -->
+  <div class="pag d-flex">
+        <div class="sidebar bg-white -p-10 m-10  ">
+            <h1 class="p-15 m-10" style="text-align: center;">mo <br> sobhy</h1>
+            <div class="lier .wid">
+                <ul class="d-flex f-wrap p-10 m-10 align-center f-column gap-20">
+                    <li class="change" id="changeClassBtn">
+                        <a href="endex-html" class="active d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- Content -->
+    <div class="content w-full ">
+      <!-- Header -->
+      <header class="t-0 p-relative p-15 m bg-white">
+        <div class="head d-flex align-center space-between">
+          <div class="form p-relative">
+            <input type="text" placeholder="you can search here" />
+          </div>
+          <div class="icone d-flex align-center gap-20">
+            <i class="fa-regular fa-bell fa-lg p-relative" style="position: relative; cursor: pointer;">
+              <span class="mes"></span>
+            </i>
+            <div class="img">
+              <img src="css-fille/image/avatar.png" alt="" class="header-img" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard -->
+      <div class="Dashboard p-20 v-h">
+        <div class="title">
+          <h1 >Dashboard</h1>
+        </div>
+        <div class="holder d-flex p-15 space-between">
+          <div class="box  center-flex f-column" data-aos="zoom-in-up">
+            <div class="up d-flex">
+              <div class="title-dah d-flex f-column gap-5 c-white">
+                <h3>Welcome </h3>
+                <p>ELSHARQAWEy</p>
+              </div>
+              <img src="css-fille/image/welcome.png" alt="">
+
+            </div>
+            <img src="css-fille/image/avatar.png" alt="" class="avater-in-dash">
+            <div class="spans w-full"  data-aos="zoom-in-up">
+              <div class="content w-full">
+                <span class="dash-box-spann center-flex f-column gap-20" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+                  <p> osama Elzero
+                  </p> <span class="less-font"> Develober</span>
+                </span>
+                <span class="dash-box-spann center-flex f-column gap-20"  data-aos="fade-up"
+     data-aos-duration="800"data-aos-delay="500">
+                  <p> project
+                  </p> <span class="less-font"> 90</span>
+                </span>
+                <span class="dash-box-span center-flex f-column gap-20" data-aos="fade-up"
+     data-aos-duration="900"data-aos-delay="600">
+                  <p> Earned
+                  </p> <span class="less-font"> $300</span>
+                </span>
+              </div>
+            </div>
+            <div class="botton"> <button class="profile-linke"><a href="" style="color: white;">profile</a></button>
+            </div>
+          </div>
+          <div class="    box gap-20 d-flex f-column two "  data-aos="zoom-in-up">
+            <div class="title-dah d-flex f-column gap-5 c-white">
+              <h3 style="color: rgb(0, 32 , 46);">Quick Draft</h3>
+              <p>Write A Draft For Your Ideas</p>
+            </div>
+            <input type="text" placeholder="title" id="title">
+            <textarea name="" id="message'" placeholder="write Yourthout here"></textarea>
+            <button class="botton" id="sendBtn">send to us</button>
+          </div>
+          <div class="    box gap-20 d-flex f-column two "  data-aos="zoom-in-up">
+            <div class="title-dah d-flex f-column gap-5 c-white">
+              <h3 style="color: rgb(0, 32, 46);">Yearly Targets</h3>
+              <p>Targets Of The Year</p>
+            </div>
+            <div class="child-box " data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+              <div class="money d-flex">
+                <div class="dolar">
+                  <i class="fa-solid fa-dollar-sign "></i>
+                </div>
+                <div class="w-full">
+                  <p>Money</p> <span>
+                    $230.35</span>
+                  <div class="d-b"> <span style="width: 60%;"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="child-box " data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="500">
+              <div class="money d-flex">
+                <div class="projects">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="w-full">
+                  <p>projects</p> <span>24</span>
+                  <div class="d-b" style="  background-color: #d76f0052;"> <span
+                      style="width: 45% ; background-color:#d76f00;"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="child-box " data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="600">
+              <div class="money d-flex">
+                <div class="Team">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="w-full">
+                  <p>Team</p> <span>
+                    3</span>
+                  <div class="d-b" style="  background-color: #22c55e4b;">
+                    <span style="width: 90%; background-color: var(--green-color);"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="    box gap-20 d-flex f-column two " data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="title-dah d-flex f-column gap-5 c-white">
+              <h3 style="color: rgb(0, 32 , 46);">Tickets Statistics </h3>
+              <p>Everything About Support Tickets</p>
+            </div>
+            <div class="d-flex txt-c gap-20 f-wrap">
+              <div class="box p-20 rad-10 fs-13 c-grey" data-aos="fade-up"
+     data-aos-duration="3000">
+                <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">2500</span>
+                Total
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-grey" data-aos="fade-up"
+     data-aos-duration="3000">
+                <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">500</span>
+                Pending
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-grey" data-aos="fade-up"
+     data-aos-duration="3000">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">1900</span>
+                Closed
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-grey" data-aos="fade-up"
+     data-aos-duration="3000">
+                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">100</span>
+                Deleted
+              </div>
+            </div>
+          </div>
+          <div class="box w-full center-flex f-column p-20 " data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+            <h2 class="w-full p-10" style="color:rgb(0, 32 , 46);">Latest New </h2>
+            <div class="child-box w-full p-20 " data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+              <div class="news d-flex gap-20 space-between w-full align-center" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400"><img src="css-fille/image/news-01.png"alt="">
+                <div class="p-15">
+                  <h4>Created SASS Section</h4>
+                  <p>New SASS Examples & Tutorials</p>
+                </div> <span>7 Days Ago</span>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400"><img src="css-fille/image/news-02.png"
+                  alt="">
+                <div class="p-15">
+                  <h4>Changed The Design</h4>
+                  <p>A Brand New Website Design</p>
+                </div> <span>8 Days Ago</span>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400"><img src="css-fille/image/news-03.png"
+                  alt="">
+                <div class="p-15">
+                  <h4>Team Increased</h4>
+                  <p>3 Developers Joined The Team</p>
+                </div> <span>2 Days Ago</span>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400"><img src="css-fille/image/news-04.png"
+                  alt="">
+                <div class="p-15">
+                  <h4>Added Payment Gateway</h4>
+                  <p>Many New Payment Gateways Added</p>
+                </div> <span>5 Days Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="box w-full  f-column two taskes" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="700">
+            <h2 class="w-full p-10" style="color:rgb(0, 32 , 46);">Latest Tasks</h2>
+            <div class="child-box w-full  ">
+              <div class="add">
+                <div class=" d-flex gap-20 space-between w-full align-center add-new-task">
+                  <div class="p-15 w-full d-flex space-between ">
+                    <h2 class="w-full d-flex space-between f-column  w-full center gap-20"> you can add other task
+                      <button class="task"
+                        style="background-color: green; color: rgb(248, 255, 248); margin: 0; cursor: pointer; font-size: 110%;width: 100%;">
+                        add task</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center p-relative">
+                <div class="p-15">
+                  <h4>Record One New Video</h4>
+                  <p>Record Python Create Exe Project</p>
+                </div>
+                <div class="i"><i class="fa-solid fa-trash-can"></i></div>
+              </div>
+            </div>
+            <div class="news d-flex gap-20 space-between w-full align-center">
+
+              <div class="p-15">
+                <h4>Write Article</h4>
+                <p>Write Low Level vs High Level Languages</p>
+              </div>
+              <div class="i"><i class="fa-solid fa-trash-can"></i></div>
+            </div>
+            <div class="news d-flex gap-20 space-between w-full align-center">
+              <div class="p-15">
+                <h4>Attend The Meeting</h4>
+                <p>Attend The Project Business Analysis Meeting</p>
+              </div>
+              <div class="i"><i class="fa-solid fa-trash-can"></i></div>
+            </div>
+            <div class="news d-flex gap-20 space-between w-full align-center">
+              <div class="p-15">
+                <h4>Finish Lesson</h4>
+                <p>Finish Teaching Flex Box</p>
+              </div>
+              <div class="i"><i class="fa-solid fa-trash-can"></i></div>
+            </div>
+
+            <div class="news d-flex gap-20 space-between w-full align-center">
+              <div class="p-15">
+                <h4>study</h4>
+                <p>study the Lessone </p>
+              </div>
+              <div class="i"><i class="fa-solid fa-trash-can"></i></div>
+            </div>
+          </div>
+          <div class="box w-full center-flex f-column p-20 search-resulte" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+            <h2 class="w-full p-10" style="color:rgb(0, 32 , 46);">Top Search Items</h2>
+            <div class="child-box w-full p-20 ">
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <p>Programming</p>
+                </div> <span class="number">176</span>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <p>JavaScript</p>
+                </div> <span>90</span>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <p>sass</p>
+                </div> <span>45</span>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <p>php</p>
+                </div> <span>100</span>
+              </div>
+            </div>
+          </div>
+          <div class="latest-uploads p-20 bg-white rad-10" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="700">
+            <h2 class="mt-0 mb-20">Latest Uploads</h2>
+            <ul class="m-0">
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img decoding="async" class="mr-10" src="css-fille/image/pdf.svg" alt="" />
+                  <div>
+                    <span class="d-block">my-file.pdf</span>
+                    <span class="fs-15 c-grey">Elzero</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">2.9mb</div>
+              </li>
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img decoding="async" class="mr-10" src="css-fille/image/avi.svg" alt="" />
+                  <div>
+                    <span class="d-block">My-Video-File.avi</span>
+                    <span class="fs-15 c-grey">Admin</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">4.9mb</div>
+              </li>
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img decoding="async" class="mr-10" src="css-fille/image/psd.svg" alt="" />
+                  <div>
+                    <span class="d-block">My-Psd-File.pdf</span>
+                    <span class="fs-15 c-grey">Osama</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">4.5mb</div>
+              </li>
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img decoding="async" class="mr-10" src="css-fille/image/zip.svg" alt="" />
+                  <div>
+                    <span class="d-block">My-Zip-File.pdf</span>
+                    <span class="fs-15 c-grey">User</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">8.9mb</div>
+              </li>
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img decoding="async" class="mr-10" src="css-fille/image/dll.svg" alt="" />
+                  <div>
+                    <span class="d-block">My-DLL-File.pdf</span>
+                    <span class="fs-15 c-grey">Admin</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">4.9mb</div>
+              </li>
+              <li class="between-flex">
+                <div class="d-flex align-center">
+                  <img decoding="async" class="mr-10" src="css-fille/image/eps.svg" alt="" />
+                  <div>
+                    <span class="d-block">My-Eps-File.pdf</span>
+                    <span class="fs-15 c-grey">Designer</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">8.9mb</div>
+              </li>
+            </ul>
+          </div>
+          <!-- End Latest Uploads Widget -->
+          <div class="box  center-flex f-column p-20 any p-relative" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+            <h2 class="w-full p-10" style="color:rgb(0, 32 , 46);">Top Search Items</h2>
+            <div class="child-box w-full p-20 p-relative any">
+              <span class="line"></span>
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <img src="css-fille/image/project.png" alt="">
+                <div class="p-15 ">
+                  <h4>Got The Project</h4>
+                </div>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <h4>Started The Project</h4>
+                </div>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <h4> Project About To Finish </h4>
+                </div>
+              </div>
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <h4 class="active-after">Test The Project</h4>
+                </div>
+              </div>
+
+              <div class="news d-flex gap-20 space-between w-full align-center">
+                <div class="p-15">
+                  <h4 class="none">Finish The Project & Get Money</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Reminders Widget -->
+          <div class="reminders p-20 bg-white rad-10 p-relative box" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+            <h2 class="mt-0 mb-25 p-20">Reminders</h2>
+            <ul class="m-0">
+              <li class="d-flex align-center mt-15 p-relative">
+                <span class="key bg-blue mr-15 d-block rad-half p-relative"></span>
+                <div class="pl-15 blue">
+                  <p class="fs-14 fw-bold mt-0 mb-5">Check My Tasks List</p>
+                  <span class="fs-13 c-grey p-relative">28/09/2022 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-center mt-15 p-relative">
+                <span class="key bg-green mr-15 d-block rad-half p-relative"></span>
+                <div class="pl-15 green">
+                  <p class="fs-14 fw-bold mt-0 mb-5">Check My Projects</p>
+                  <span class="fs-13 c-grey">26/10/2022 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-center mt-15 p-relative">
+                <span class="key bg-orange mr-15 d-block rad-half p-relative"></span>
+                <div class="pl-15 orange">
+                  <p class="fs-14 fw-bold mt-0 mb-5">Call All My Clients</p>
+                  <span class="fs-13 c-grey">05/11/2022 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-center mt-15 p-relative">
+                <span class="key bg-red mr-15 d-block rad-half p-relative"></span>
+                <div class="pl-15 red">
+                  <p class="fs-14 fw-bold mt-0 mb-5">Finish The Development Workshop</p>
+                  <span class="fs-13 c-grey">20/12/2022 - 12:00am</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- End Reminders Widget -->
+          <div class="box post " data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+            <h2 class="p-10">Latest Post</h4>
+              <div class="post-header w-full">
+                <div class="info d-flex m-0 p-10 w-full align-center">
+                  <img src="css-fille/image/avatar.png" alt="" class="m-0">
+                  <div class="d-flex f-column">
+                    <p class="latest-post fs-14 fw-bold">mohamed ALSHARQAWEy</p>
+                    <span class="c-grey"> About 3 Hours Ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <p class="c-grey fs-15  "> You can fool all of the people some of the time, and some of the people all
+                  of the time, but you
+                  can't fool all of the people all of the time.</p>
+              </div>
+              <div class="reacket p-10  space-between d-flex m-10">
+                <div><i class="fa-regular fa-heart c-grey"></i><span class="c-grey">1.6k</span></div>
+                <div class=""> <i class="fa-regular fa-comments c-grey"></i><span class="c-grey">800</span></div>
+              </div>
+          </div>
+          <div class="box social-media w-full" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+            <h2>social media</h2>
+            <div class="ploges w-full d-flex f-column gap-20">
+              <div class="twiter social-media bg-t-2 d-flex space-between w-full"  data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+                <div class="w-full h-full d-flex social-media-box align-center "><i
+                    class="fa-brands fa-twitter c-white bg-t m-10 h-full w-full"></i> <span class="c-blue">900K
+                    Followers</span>
+                </div> <button class="link bg-blue c-white bg-blue">follow</button>
+              </div>
+              <div class="feacebook bg-t-2  social-media d-flex space-between w-full" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+                <div class="w-full h-full d-flex social-media-box align-center "><i
+                    class="fa-brands fa-facebook-f c-white bg-blue m-10 h-full w-full"></i> <span class="c-blue">1m
+                    Followers</span>
+                </div> <button class="link bg-blue c-white bg-blue">follow</button>
+              </div>
+
+
+              <div class="  youtube bg-red-lite  social-media d-flex space-between w-full" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+                <div class="w-full h-full d-flex social-media-box align-center  "><i
+                    class="fa-brands  fa-youtube c-white  h-full w-full bg-red"></i> <span class="c-blue">
+                    400k Followers</span>
+                </div>
+                <button class="link bg-red c-white bg-red">subscribe</button>
+              </div>
+              <div class="linked-in social-media bg-t-2 d-flex space-between w-full" data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="800">
+                <div class="w-full h-full d-flex social-media-box align-center "><i
+                    class="fa-brands fa-square-linkedin c-white bg-blue m-10 h-full w-full"></i> <span
+                    class="c-blue">900K
+                    Followers</span>
+                </div> <button class="link bg-blue c-white bg-blue">follow</button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full bg-white p-15 table">
+            <h2>Projects</h2>
+            <table class="w-full">
+              <tbody>
+                <tr class="bg-eee"  data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="100">
+                  <th colspan="">name</th>
+                  <th>Finish Date </th>
+                  <th> Client </th>
+                  <th>Price </th>
+                  <th> Team </th>
+                  <th> Status</th>
+                </tr>
+                <tr  data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="400">
+                  <td>Ministry Wikipedia</td>
+                  <td>10 May 2022</td>
+                  <td> Ministry</td>
+                  <td> $5300</td>
+                  <td class="img"><img src="css-fille/image/team-01.png" alt=""> <img src="css-fille/image/team-02.png"
+                      alt=""> <img src="css-fille/image/team-03.png" alt=""> <img src="css-fille/image/team-05.png"
+                      alt=""></td>
+                  <td>
+                    <span class="label btn-shape bg-orange c-white">Pending</span>
+                </tr>
+                </td>
+                </tr>
+                <tr  data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="700">
+                  <td>Elzero Shop</td>
+                  <td>12 Oct 2021</td>
+                  <td>Elzero Company</td>
+                  <td>$1500</td>
+                  <td class="img">
+                    <img decoding="async" src="css-fille/image/team-02.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-03.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-05.png" alt="" />
+                  </td>
+                  <td><span class="label btn-shape bg-blue c-white">In Progress</span></td>
+                </tr>
+                <tr data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="800">
+                  <td>Bouba App</td>
+                  <td>05 Sep 2021</td>
+                  <td>Bouba</td>
+                  <td>$800</td>
+                  <td>
+                    <img decoding="async" src="css-fille/image/team-02.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-03.png" alt="" />
+                  </td>
+                  <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+                </tr>
+                <tr  data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="1000">
+                  <td>Mahmoud Website</td>
+                  <td>22 May 2021</td>
+                  <td>Mahmoud</td>
+                  <td>$600</td>
+                  <td>
+                    <img decoding="async" src="css-fille/image/team-01.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-03.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-05.png" alt="" />
+                  </td>
+                  <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+                </tr>
+                <tr  data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="1100">
+                  <td>Sayed Website</td>
+                  <td>24 May 2021</td>
+                  <td>Sayed</td>
+                  <td>$300</td>
+                  <td>
+                    <img decoding="async" src="css-fille/image/team-01.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-05.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-04.png" alt="" />
+                  </td>
+                  <td><span class="label btn-shape bg-red c-white">Rejected</span></td>
+                </tr>
+                <tr  data-aos="fade-up"
+     data-aos-duration="700"data-aos-delay="1300">
+                  <td>Arena Application</td>
+                  <td>01 Mar 2021</td>
+                  <td>Arena Company</td>
+                  <td>$2600</td>
+                  <td>
+                    <img decoding="async" src="css-fille/image/team-03.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-04.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-02.png" alt="" />
+                    <img decoding="async" src="css-fille/image/team-01.png" alt="" />
+                  </td>
+                  <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="jss-fill.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>
+  AOS.init({
+    duration: 800, 
+    delay: 100,     
+    once: false 
+  });
+</script>
+
+</body>
+
+</html>
